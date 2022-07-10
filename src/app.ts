@@ -5,6 +5,12 @@ const fs = require("fs");
 
 const server: FastifyInstance = Fastify({});
 
+server.register(require('@fastify/cors'), {
+// origin: '*',
+// methods: '*'
+})
+
+
 server.get("/api/transactions", async (request, reply) => {
   // This is where you would get the data from the database
   const transactions: BankTransactions = JSON.parse(
@@ -15,7 +21,7 @@ server.get("/api/transactions", async (request, reply) => {
 
 const start = async () => {
   try {
-    await server.listen({ port: 3000 });
+    await server.listen({ port: 3001 });
 
     const address = server.server.address();
     console.log("Server has been started:", address);

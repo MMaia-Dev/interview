@@ -1,3 +1,17 @@
+# Todo:
+- Styling
+- 3 tab display for each bank account
+- Separate bank accounts by page route
+# Next Steps:
+- Add new transaction
+  - server post endpoint to update json file
+  - react app make request with data to new endpoint
+
+# Improvements:
+- Return modified json response from Fastify with requried json properties only to improve loading
+- Add and impliment GraphQL to improve json loading
+- Load only required data
+
 # Neo Playground
 
 This is an area to show your familiarity with node.js and JavaScript frameworks.
