@@ -7,16 +7,16 @@ export class NavbarComponent extends Component {
     return (
       <Menu inverted>
         <Menu.Item>
-          <h1> React</h1>
+          <h1> Accounts:</h1>
         </Menu.Item>
         <Menu.Item>
-          <Link to="/account0">Account 0</Link>
+          <Link to="/456789">456789</Link>
         </Menu.Item>     
         <Menu.Item>
-          <Link to="/account1">Account 1</Link>
+          <Link to="/945315">945315</Link>
         </Menu.Item>  
         <Menu.Item>
-          <Link to="/account2">Account 2</Link>
+          <Link to="/9452-1553-2345-7654">9452-1553-2345-7654</Link>
         </Menu.Item> 
       </Menu>
     );
