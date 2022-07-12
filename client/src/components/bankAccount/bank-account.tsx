@@ -18,6 +18,7 @@ function BankAccounts (props : IBankAccount) {
                 <Table.Row>
                 <Table.HeaderCell>Account Holder</Table.HeaderCell>
                 <Table.HeaderCell>Account Number</Table.HeaderCell>
+                <Table.HeaderCell>Account Holder Type</Table.HeaderCell>
                 <Table.HeaderCell>Account Type</Table.HeaderCell>
                 <Table.HeaderCell>Current Balance</Table.HeaderCell>
                 <Table.HeaderCell>Available Balance</Table.HeaderCell>
@@ -28,6 +29,7 @@ function BankAccounts (props : IBankAccount) {
                     <Table.Row >
                     <Table.Cell>{props.bankAccounts.accountHolder}</Table.Cell>
                     <Table.Cell>{props.bankAccounts.accountNumber}</Table.Cell>
+                    <Table.Cell>{props.bankAccounts.accountHolderType}</Table.Cell>
                     <Table.Cell>{props.bankAccounts.accountType}</Table.Cell>
                     <Table.Cell>{props.bankAccounts.currentBalance}</Table.Cell>
                     <Table.Cell>{props.bankAccounts.availableBalance}</Table.Cell>                  
