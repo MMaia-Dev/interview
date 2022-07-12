@@ -1,7 +1,7 @@
 import React from "react";
 import { BankAccount } from "../../models/transactions";
 import GroupTransactions from "../grouptransactions/group-transactions";
-import { Button, Table, Icon, Container, Dropdown, Menu, Pagination } from "semantic-ui-react";
+import {  Table } from "semantic-ui-react";
 import BankStament from "../statement-summary/bank-statement";
 
 interface IBankAccount{

@@ -1,6 +1,6 @@
 import React from "react";
 import {  StatementSummary } from "../../models/transactions";
-import { Button, Table, Icon, Container, Dropdown, Menu, Pagination } from "semantic-ui-react";
+import {  Table } from "semantic-ui-react";
 
 interface IBankStatement{
     statement : StatementSummary;
@@ -19,10 +19,9 @@ function BankStament (props : IBankStatement) {
                     </Table.Row>
                 </Table.Header>
 
-                <Table.Body>    
-                    
+                <Table.Body>                   
                     <Table.Row >
-                        <Table.Cell>Opening Balance</Table.Cell>
+                        <Table.Cell style={{width: "50%"}}>Opening Balance</Table.Cell>
                         <Table.Cell>{props.statement.openingBalance}</Table.Cell>                                  
                     </Table.Row> 
                     <Table.Row >
